@@ -9,6 +9,7 @@
     "airbnb",
     "airbnb-typescript",
     "prettier",
+    "next",
     "next/core-web-vitals"
   ],
   "rules": {
