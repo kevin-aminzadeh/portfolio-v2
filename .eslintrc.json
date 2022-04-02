@@ -13,7 +13,7 @@
     "next/core-web-vitals"
   ],
   "parserOptions": {
-    "project": ["./tsconfig.eslint.json"]
+    "project": ["./tsconfig.json"]
   },
   "rules": {
     "react/react-in-jsx-scope": "off"
