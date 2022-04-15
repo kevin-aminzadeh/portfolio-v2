@@ -3,5 +3,7 @@
 
 /* Tailwind Core Directives */
 @tailwind base;
+
 @tailwind components;
+
 @tailwind utilities;
