@@ -5,7 +5,7 @@ const customConfig = {
     'npm run prettier:fix',
     'npm run test:unit:staged',
   ],
-  'src/**/*.css?(x)': [() => 'npm run lint:styles:staged'],
+  'src/**/*.css?(x)': ['npm run lint:styles:staged', 'npm run prettier:fix'],
 }
 
 module.exports = customConfig
