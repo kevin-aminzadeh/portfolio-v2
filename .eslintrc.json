@@ -4,8 +4,14 @@
     "jest": true,
     "browser": true
   },
-  "plugins": ["@typescript-eslint"],
+  "plugins": [
+    "sort-keys-fix",
+    "sort-destructure-keys",
+    "typescript-sort-keys",
+    "@typescript-eslint"
+  ],
   "extends": [
+    "plugin:typescript-sort-keys/recommended",
     "airbnb",
     "airbnb-typescript",
     "prettier",
@@ -17,7 +23,9 @@
   },
   "rules": {
     "react/react-in-jsx-scope": "off",
-    "react/jsx-sort-props": "error"
+    "react/jsx-sort-props": "error",
+    "sort-keys-fix/sort-keys-fix": "error",
+    "sort-destructure-keys/sort-destructure-keys": 2
   },
   "globals": {
     "React": "writable"
