@@ -27,7 +27,7 @@
       "@hooks/*": ["src/common/hooks/*"],
       "@modules/*": ["src/modules/*"],
       "@styles/*": ["src/common/styles/*"],
-      "@types/*": ["src/common/types/*"]
+      "@customTypes/*": ["src/common/types/*"]
     }
   },
   "include": ["next-env.d.ts", "src/**/*.ts", "src/**/*.tsx", "e2e/**/*.ts"],
