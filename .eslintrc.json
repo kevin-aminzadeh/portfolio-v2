@@ -5,6 +5,7 @@
     "browser": true
   },
   "plugins": [
+    "sort-imports-es6-autofix",
     "sort-keys-fix",
     "sort-destructure-keys",
     "typescript-sort-keys",
@@ -12,6 +13,7 @@
   ],
   "extends": [
     "plugin:typescript-sort-keys/recommended",
+    "plugin:storybook/recommended",
     "airbnb",
     "airbnb-typescript",
     "prettier",
@@ -24,6 +26,12 @@
   "rules": {
     "react/react-in-jsx-scope": "off",
     "react/jsx-sort-props": "error",
+    "sort-imports-es6-autofix/sort-imports-es6": [
+      "error",
+      {
+        "memberSyntaxSortOrder": ["none", "all", "single", "multiple"]
+      }
+    ],
     "sort-keys-fix/sort-keys-fix": "error",
     "sort-destructure-keys/sort-destructure-keys": 2
   },
