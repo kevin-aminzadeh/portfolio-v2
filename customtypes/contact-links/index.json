@@ -1,0 +1,9 @@
+{
+  "id": "contact-links",
+  "label": "Contact Links",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {}
+  }
+}
