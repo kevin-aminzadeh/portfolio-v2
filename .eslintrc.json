@@ -4,8 +4,16 @@
     "jest": true,
     "browser": true
   },
-  "plugins": ["@typescript-eslint"],
+  "plugins": [
+    "sort-imports-es6-autofix",
+    "sort-keys-fix",
+    "sort-destructure-keys",
+    "typescript-sort-keys",
+    "@typescript-eslint"
+  ],
   "extends": [
+    "plugin:typescript-sort-keys/recommended",
+    "plugin:storybook/recommended",
     "airbnb",
     "airbnb-typescript",
     "prettier",
@@ -16,7 +24,22 @@
     "project": ["./tsconfig.json"]
   },
   "rules": {
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-sort-props": "error",
+    "sort-imports-es6-autofix/sort-imports-es6": [
+      "error",
+      {
+        "memberSyntaxSortOrder": ["none", "all", "single", "multiple"]
+      }
+    ],
+    "sort-keys-fix/sort-keys-fix": "error",
+    "sort-destructure-keys/sort-destructure-keys": 2,
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": ["**/*.stories.*", "**/.storybook/**/*.*"]
+      }
+    ]
   },
   "globals": {
     "React": "writable"
