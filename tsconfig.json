@@ -28,7 +28,8 @@
       "@modules/*": ["src/modules/*"],
       "@styles/*": ["src/common/styles/*"],
       "@customTypes/*": ["src/common/types/*"],
-      "@utils/*": ["src/utils/*"]
+      "@utils/*": ["src/utils/*"],
+      "@rootDir/*": ["./*"]
     }
   },
   "include": ["next-env.d.ts", "src/**/*.ts", "src/**/*.tsx", "e2e/**/*.ts"],
