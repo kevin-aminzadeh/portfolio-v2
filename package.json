@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.17.9",
-    "@commitlint/cli": "^16.2.3",
+    "@commitlint/cli": "^16.3.0",
     "@commitlint/config-conventional": "^16.2.1",
     "@next/eslint-plugin-next": "^12.1.0",
     "@playwright/test": "^1.20.2",
@@ -60,6 +60,8 @@
     "autoprefixer": "^10.4.4",
     "babel-loader": "^8.2.4",
     "babel-plugin-macros": "^3.1.0",
+    "commitlint-config-jira": "^1.6.4",
+    "commitlint-plugin-jira-rules": "^1.6.4",
     "eslint": "^8.2.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^16.1.3",
