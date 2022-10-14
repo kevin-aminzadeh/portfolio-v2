@@ -23,9 +23,8 @@ const Home: NextPage = function Home() {
         <link href='/favicon.ico' rel='icon' />
       </Head>
 
-      <main>
-        {/* <StyledInput hasBorder /> */}
-        <section className='flex h-screen flex-col justify-center px-14'>
+      <main className='px-14'>
+        <section className='hero flex h-screen flex-col justify-center px-14'>
           <h2 className='text-4xl font-bold'>Hi there 👋</h2>
           <h1 className='mt-4 text-8xl font-black tracking-wide'>
             I&apos;m Kevin Aminzadeh
@@ -54,7 +53,7 @@ const Home: NextPage = function Home() {
           </div>
         </section>
 
-        <section className='blurb flex flex-col justify-center px-14 pt-2'>
+        <section className='blurb flex h-screen flex-col justify-center px-14'>
           <div className='flex'>
             <div className='flex w-1/2 flex-col justify-center'>
               <h2 className='text-4xl font-extrabold'>
