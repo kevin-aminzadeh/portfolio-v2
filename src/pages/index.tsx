@@ -1,18 +1,18 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-// import tw, { styled } from 'twin.macro'
+import tw, { styled } from 'twin.macro'
 import type { NextPage } from 'next'
 
-// const StyledInput = styled.input({
-//   // Spread the base styles
-//   ...tw`bg-white max-w-[200px]`,
-//   // Add conditional styling in the variants object
-//   // https://stitches.dev/docs/variants
-//   variants: {
-//     hasBorder: { true: tw`border-purple-500` },
-//   },
-// })
+const StyledInput = styled.input({
+  // Spread the base styles
+  ...tw`bg-white max-w-[200px]`,
+  // Add conditional styling in the variants object
+  // https://stitches.dev/docs/variants
+  variants: {
+    hasBorder: { true: tw`border-purple-500` },
+  },
+})
 
 const Home: NextPage = function Home() {
   return (
@@ -23,29 +23,33 @@ const Home: NextPage = function Home() {
         <link href='/favicon.ico' rel='icon' />
       </Head>
 
-      <main className='px-14'>
-        <section className='hero flex h-screen flex-col justify-center px-14'>
-          <h2 className='text-4xl font-bold'>Hi there 👋</h2>
-          <h1 className='mt-4 text-8xl font-black tracking-wide'>
+      <main tw='px-14'>
+        <section
+          className='hero'
+          tw='flex h-screen flex-col justify-center px-14'
+        >
+          <h2 tw='text-4xl font-bold'>Hi there 👋</h2>
+          <StyledInput />
+          <h1 tw='mt-4 text-8xl font-black tracking-wide'>
             I&apos;m Kevin Aminzadeh
           </h1>
-          <p className='mt-8 text-2xl'>
+          <p tw='mt-8 text-2xl'>
             I&apos;m a software Engineer with a background in media production,
             based in Adelaide, South Australia.
           </p>
-          <div className='cta w-100 mt-14 flex'>
+          <div className='cta' tw='w-full mt-14 flex'>
             <Link href='/projects' passHref>
               <a
-                className='relative border-2 border-red-500 bg-red-500 px-6 py-4 text-white outline-red-500'
                 href='/projects'
+                tw='relative border-2 border-red-500 bg-red-500 px-6 py-4 text-white outline-red-500'
               >
                 View Portfolio
               </a>
             </Link>
             <Link href='/contact' passHref>
               <a
-                className='relative ml-10 border-2 border-black px-6 py-4'
                 href='/contact'
+                tw='relative ml-10 border-2 border-black px-6 py-4'
               >
                 Let&apos;s Talk!
               </a>
@@ -53,27 +57,30 @@ const Home: NextPage = function Home() {
           </div>
         </section>
 
-        <section className='blurb flex h-screen flex-col justify-center px-14'>
-          <div className='flex'>
-            <div className='flex w-1/2 flex-col justify-center'>
-              <h2 className='text-4xl font-extrabold'>
+        <section
+          className='blurb'
+          tw='flex h-screen flex-col justify-center px-14'
+        >
+          <div tw='flex'>
+            <div tw='flex w-1/2 flex-col justify-center'>
+              <h2 tw='text-4xl font-extrabold'>
                 I love creating innovative solutions that empower businesses
               </h2>
             </div>
 
-            <div className='w-1/2'>
-              <p className='mt-8 text-xl'>
+            <div tw='w-1/2'>
+              <p tw='mt-8 text-xl'>
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                 diam nonumy eirmod tempor invidunt ut labore et dolore magna
                 aliquyam erat, sed diam voluptua. At vero eos et accusam et
                 justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
                 takimata sanctus est Lorem ipsum dolor sit!!
               </p>
-              <div className='cta w-100 mt-14 flex'>
+              <div className='cta' tw='w-full mt-14 flex'>
                 <Link href='/projects' passHref>
                   <a
-                    className='relative border-b-4  border-red-500 text-2xl font-extrabold'
                     href='/projects'
+                    tw='relative border-b-4  border-red-500 text-2xl font-extrabold'
                   >
                     Learn More
                   </a>
@@ -83,12 +90,13 @@ const Home: NextPage = function Home() {
           </div>
         </section>
 
-        <section className='recent-projects py-10 text-center'>
-          <h2 className='text-center text-8xl font-extrabold'>
-            Recent Projects
-          </h2>
-          <div className='project-card mt-44 flex w-full'>
-            <div className='card-image block w-1/2 rounded-xl bg-violet-400 text-center'>
+        <section className='recent-projects' tw='py-10 text-center'>
+          <h2 tw='text-center text-8xl font-extrabold'>Recent Projects</h2>
+          <div className='recent-projects' tw='mt-44 flex w-full'>
+            <div
+              className='card-image'
+              tw='block w-1/2 rounded-xl bg-violet-400 text-center'
+            >
               <Image
                 alt='Project Thumbnail'
                 height='545.78px'
@@ -97,25 +105,29 @@ const Home: NextPage = function Home() {
                 width='271.63px'
               />
             </div>
-            <div className='card-content align-center ml-14 flex w-1/2 flex-col'>
-              <span className='text-xl font-medium'>
-                React.js, Express.js, MySQL
-              </span>
-              <h3 className='mt-4 text-6xl font-extrabold'>
+            <div
+              className='recent-projects'
+              tw='content-center ml-14 flex w-1/2 flex-col'
+            >
+              <span tw='text-xl font-medium'>React.js, Express.js, MySQL</span>
+              <h3 tw='mt-4 text-6xl font-extrabold'>
                 Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr
               </h3>
               <Link href='/project'>
                 <a
-                  className='relative mt-20 max-w-xs border-2 border-black bg-black px-6 py-4 text-center text-white'
                   href='/project'
+                  tw='relative mt-20 max-w-xs border-2 border-black bg-black px-6 py-4 text-center text-white'
                 >
                   Learn More
                 </a>
               </Link>
             </div>
           </div>
-          <div className='project-card mt-40 flex w-full'>
-            <div className='card-image block w-1/2 rounded-xl bg-violet-400 text-center'>
+          <div className='recent-projects' tw='mt-40 flex w-full'>
+            <div
+              className='card-image'
+              tw='block w-1/2 rounded-xl bg-violet-400 text-center'
+            >
               <Image
                 alt='Project Thumbnail'
                 height='545.78px'
@@ -124,25 +136,29 @@ const Home: NextPage = function Home() {
                 width='271.63px'
               />
             </div>
-            <div className='card-content align-center ml-14 flex w-1/2 flex-col'>
-              <span className='text-xl font-medium'>
-                React.js, Express.js, MySQL
-              </span>
-              <h3 className='mt-4 text-6xl font-extrabold'>
+            <div
+              className='recent-projects'
+              tw='content-center ml-14 flex w-1/2 flex-col'
+            >
+              <span tw='text-xl font-medium'>React.js, Express.js, MySQL</span>
+              <h3 tw='mt-4 text-6xl font-extrabold'>
                 Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr
               </h3>
               <Link href='/project'>
                 <a
-                  className='relative mt-20 max-w-xs border-2 border-black bg-black px-6 py-4 text-center text-white'
                   href='/project'
+                  tw='relative mt-20 max-w-xs border-2 border-black bg-black px-6 py-4 text-center text-white'
                 >
                   Learn More
                 </a>
               </Link>
             </div>
           </div>
-          <div className='project-card mt-40 flex w-full'>
-            <div className='card-image block w-1/2 rounded-xl bg-violet-400 text-center'>
+          <div className='recent-projects' tw='mt-40 flex w-full'>
+            <div
+              className='card-image'
+              tw='block w-1/2 rounded-xl bg-violet-400 text-center'
+            >
               <Image
                 alt='Project Thumbnail'
                 height='545.78px'
@@ -151,41 +167,45 @@ const Home: NextPage = function Home() {
                 width='271.63px'
               />
             </div>
-            <div className='card-content align-center ml-14 flex w-1/2 flex-col'>
-              <span className='text-xl font-medium'>
-                React.js, Express.js, MySQL
-              </span>
-              <h3 className='mt-4 text-6xl font-extrabold'>
+            <div
+              className='recent-projects'
+              tw='content-center ml-14 flex w-1/2 flex-col'
+            >
+              <span tw='text-xl font-medium'>React.js, Express.js, MySQL</span>
+              <h3 tw='mt-4 text-6xl font-extrabold'>
                 Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr
               </h3>
               <Link href='/project'>
                 <a
-                  className='relative mt-20 max-w-xs border-2 border-black bg-black px-6 py-4 text-center text-white'
                   href='/project'
+                  tw='relative mt-20 max-w-xs border-2 border-black bg-black px-6 py-4 text-center text-white'
                 >
                   Learn More
                 </a>
               </Link>
             </div>
           </div>
-          <div className='mt-44'>
+          <div tw='mt-44'>
             <Link href='/projects'>
               <a
-                className='border-b-4 border-red-500 text-xl font-extrabold'
                 href='/projects'
+                tw='border-b-4 border-red-500 text-xl font-extrabold'
               >
                 View All Projects
               </a>
             </Link>
           </div>
         </section>
-        <section className='cta flex h-screen max-h-[1080px] w-full flex-col items-center justify-center bg-violet-400'>
-          <h2 className='text-8xl font-black text-white'>Fancy a chat?</h2>
+        <section
+          className='cta'
+          tw='flex h-screen max-h-[1080px] w-full flex-col items-center justify-center bg-violet-400'
+        >
+          <h2 tw='text-8xl font-black text-white'>Fancy a chat?</h2>
           <Link href='/contact' passHref>
             <a
-              className='relative ml-10 mt-24 border-2 border-white py-4 px-14 text-xl text-white
-              '
               href='/contact'
+              tw='relative ml-10 mt-24 border-2 border-white py-4 px-14 text-xl text-white
+              '
             >
               Get in Touch
             </a>
