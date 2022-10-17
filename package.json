@@ -23,9 +23,11 @@
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "slicemachine": "start-slicemachine"
+    "slicemachine": "start-slicemachine",
+    "cz": "cz"
   },
   "dependencies": {
+    "@digitalroute/cz-conventional-changelog-for-jira": "^7.4.1",
     "@prismicio/client": "^6.7.1",
     "@prismicio/helpers": "^2.3.5",
     "@prismicio/react": "^2.5.0",
@@ -62,6 +64,7 @@
     "autoprefixer": "^10.4.12",
     "babel-loader": "^8.2.4",
     "babel-plugin-macros": "^3.1.0",
+    "commitizen": "^4.2.5",
     "commitlint-config-jira": "^1.6.4",
     "commitlint-plugin-jira-rules": "^1.6.4",
     "eslint": "^8.25.0",
