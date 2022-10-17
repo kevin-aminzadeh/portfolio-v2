@@ -23,7 +23,8 @@
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "slicemachine": "start-slicemachine"
+    "slicemachine": "start-slicemachine",
+    "cz": "cz"
   },
   "dependencies": {
     "@digitalroute/cz-conventional-changelog-for-jira": "^7.4.1",
@@ -96,10 +97,5 @@
   },
   "resolutions": {
     "webpack": "^5"
-  },
-  "husky": {
-    "hooks": {
-      "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
-    }
   }
 }
