@@ -5,6 +5,6 @@ module.exports = {
     },
   },
   rules: {
-    'references-empty': [0, 'never'],
+    'references-empty': [2, 'never'],
   },
 }
